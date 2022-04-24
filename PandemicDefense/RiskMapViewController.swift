@@ -105,7 +105,11 @@ class RiskMapViewController: UIViewController, MKMapViewDelegate {
                 
                 let constant = stuff["risk"] as? Double ?? 0
                 
-                annotationView.markerTintColor = UIColor(red: (255.0/255), green: ((255-25.5*constant)/255), blue: ((255-25.5*constant)/255), alpha: 1.0)
+                if(constant < 5){
+                    annotationView.markerTintColor = UIColor(red: (255.0/255), green: ((255-25.5*constant*2)/255), blue: ((255-25.5*constant*2)/255), alpha: 1.0)
+                }else{
+                    annotationView.markerTintColor = UIColor(red: (255.0 - constant*25.5/2)/255.0, green: 0.0, blue: 0.0, alpha: 1.0)
+                }
                 
             }
         }
