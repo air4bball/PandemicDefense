@@ -16,7 +16,7 @@ class SocialDistancingViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        var riskIndex = 5.5;
+        var riskIndex = RiskMapViewController.GlobalVariable.riskIndex;
         riskIndexView.setProgress(Float(riskIndex/10.0), animated: true);
         
         if (riskIndex >= 0 && riskIndex <= 3 ){

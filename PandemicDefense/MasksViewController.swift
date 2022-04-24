@@ -21,7 +21,7 @@ class MasksViewController : UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        var riskIndex = 8.0;
+        var riskIndex = RiskMapViewController.GlobalVariable.riskIndex;
         
         if (riskIndex >= 0 && riskIndex <= 2.5 ){
             let clothMaskImage = UIImage(named: "Cloth Mask");
