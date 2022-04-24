@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791CCF732814C29E00294D7B /* MasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CCF722814C29E00294D7B /* MasksViewController.swift */; };
+		791CCFC62814F8A200294D7B /* RiskMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CCFC52814F8A200294D7B /* RiskMapViewController.swift */; };
 		7941FA532814831C0006FA75 /* SocialDistancingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941FA522814831C0006FA75 /* SocialDistancingViewController.swift */; };
 		7E924642BA518AE02002E655 /* Pods_PandemicDefense_PandemicDefenseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA7E30600FE11CAB8F8DB21 /* Pods_PandemicDefense_PandemicDefenseUITests.framework */; };
 		858CF4C99447397B53C07603 /* Pods_PandemicDefenseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E8CAD91F9F648B112D7EB4 /* Pods_PandemicDefenseTests.framework */; };
@@ -43,6 +45,8 @@
 		1989C54AB1564FC4EE604FFB /* Pods-PandemicDefenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandemicDefenseTests.debug.xcconfig"; path = "Target Support Files/Pods-PandemicDefenseTests/Pods-PandemicDefenseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		20E8B37CB6BB92282B9DDFFA /* Pods-PandemicDefense-PandemicDefenseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandemicDefense-PandemicDefenseUITests.debug.xcconfig"; path = "Target Support Files/Pods-PandemicDefense-PandemicDefenseUITests/Pods-PandemicDefense-PandemicDefenseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		27E60AD0DA58F04E6B741B46 /* Pods-PandemicDefenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandemicDefenseTests.release.xcconfig"; path = "Target Support Files/Pods-PandemicDefenseTests/Pods-PandemicDefenseTests.release.xcconfig"; sourceTree = "<group>"; };
+		791CCF722814C29E00294D7B /* MasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasksViewController.swift; sourceTree = "<group>"; };
+		791CCFC52814F8A200294D7B /* RiskMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskMapViewController.swift; sourceTree = "<group>"; };
 		7941FA522814831C0006FA75 /* SocialDistancingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialDistancingViewController.swift; sourceTree = "<group>"; };
 		B9E8CAD91F9F648B112D7EB4 /* Pods_PandemicDefenseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandemicDefenseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA7E30600FE11CAB8F8DB21 /* Pods_PandemicDefense_PandemicDefenseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandemicDefense_PandemicDefenseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +117,6 @@
 				1989C54AB1564FC4EE604FFB /* Pods-PandemicDefenseTests.debug.xcconfig */,
 				27E60AD0DA58F04E6B741B46 /* Pods-PandemicDefenseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +148,8 @@
 				F412E01D2813CDED007C9110 /* AppDelegate.swift */,
 				F412E01F2813CDED007C9110 /* SceneDelegate.swift */,
 				F412E0212813CDED007C9110 /* ViewController.swift */,
+				791CCFC52814F8A200294D7B /* RiskMapViewController.swift */,
+				791CCF722814C29E00294D7B /* MasksViewController.swift */,
 				F412E0232813CDED007C9110 /* Main.storyboard */,
 				F412E0262813CDF1007C9110 /* Assets.xcassets */,
 				F412E0282813CDF1007C9110 /* LaunchScreen.storyboard */,
@@ -376,6 +381,8 @@
 			files = (
 				F412E0222813CDED007C9110 /* ViewController.swift in Sources */,
 				7941FA532814831C0006FA75 /* SocialDistancingViewController.swift in Sources */,
+				791CCFC62814F8A200294D7B /* RiskMapViewController.swift in Sources */,
+				791CCF732814C29E00294D7B /* MasksViewController.swift in Sources */,
 				F412E01E2813CDED007C9110 /* AppDelegate.swift in Sources */,
 				F412E0202813CDED007C9110 /* SceneDelegate.swift in Sources */,
 			);
