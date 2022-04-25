@@ -280,7 +280,7 @@
         <!--Chat-->
         <scene sceneID="WR2-Xp-Ytt">
             <objects>
-                <viewController id="bG1-ec-gUR" sceneMemberID="viewController">
+                <viewController id="bG1-ec-gUR" customClass="SympViewController" customModule="PandemicDefense" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ldJ-gY-uOT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,21 +300,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Response:   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUw-yN-tnx">
-                                <rect key="frame" x="118" y="578" width="296" height="45"/>
+                                <rect key="frame" x="118" y="545" width="296" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFL-2T-HR8">
-                                <rect key="frame" x="20" y="643" width="311" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86655724908887732" green="0.86655724908887732" blue="0.86655724908887732" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, how may I help you?" lineBreakMode="wordWrap" numberOfLines="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gv-CW-qag">
-                                <rect key="frame" x="52" y="267" width="301" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, how may I help you?" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gv-CW-qag">
+                                <rect key="frame" x="52" y="265" width="301" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -326,28 +319,54 @@
                                 <color key="tintColor" red="0.1937786265" green="0.42335109370000001" blue="0.47776000029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final Diagnosis:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jz-My-vo0">
-                                <rect key="frame" x="38" y="422" width="329" height="42"/>
+                                <rect key="frame" x="38" y="400" width="329" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Symp is thinking ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ6-uT-0ZE">
-                                <rect key="frame" x="82" y="482" width="240" height="36"/>
+                                <rect key="frame" x="82" y="450" width="240" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-Um-uz7">
-                                <rect key="frame" x="334" y="640" width="67" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-vC-Qx3">
+                                <rect key="frame" x="8" y="668" width="393" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text"> Disclaimer: This information is not intended to be a confirmation, rather than an assistive diagnosis tool. Do test using government-approved methods for a confirmation.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJs-o8-604">
+                                <rect key="frame" x="8" y="600" width="311" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86655724909999998" green="0.86655724909999998" blue="0.86655724909999998" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="Symp:" destination="JM9-QU-ZGt" eventType="editingDidEnd" id="J2a-6Y-l5f"/>
+                                    <action selector="SympRep:" destination="JM9-QU-ZGt" eventType="editingDidEnd" id="OdK-eV-EYT"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-Um-uz7">
+                                <rect key="frame" x="336" y="605" width="49" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" red="0.23285242489999999" green="0.50871621160000002" blue="0.57409620780000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="10" height="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                    <color key="titleShadowColor" red="0.1100875102" green="0.33632990260000001" blue="0.30742063359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <imageReference key="backgroundImage" image="paperplane.fill" catalog="system" symbolScale="small"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnPress:" destination="JM9-QU-ZGt" eventType="touchUpInside" id="Mfu-54-WLJ"/>
+                                    <action selector="btnPressed:" destination="bG1-ec-gUR" eventType="touchUpInside" id="ejU-fv-6nK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KIg-nt-R5y"/>
@@ -357,8 +376,14 @@
                         <color key="badgeColor" red="0.14508323009999999" green="0.3169655254" blue="0.35770180299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="SympRep" destination="hJs-o8-604" id="fWw-lM-p0S"/>
+                        <outlet property="SympSpeak" destination="7gv-CW-qag" id="YNI-U1-fDt"/>
+                        <outlet property="finalDiag" destination="kQ6-uT-0ZE" id="m6n-vd-eoH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xya-CD-mHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JM9-QU-ZGt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2776.811594202899" y="-12.053571428571429"/>
         </scene>
