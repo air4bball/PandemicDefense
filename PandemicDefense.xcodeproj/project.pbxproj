@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		791CCF732814C29E00294D7B /* MasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CCF722814C29E00294D7B /* MasksViewController.swift */; };
 		791CCFC62814F8A200294D7B /* RiskMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CCFC52814F8A200294D7B /* RiskMapViewController.swift */; };
+		791CD0072816206200294D7B /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 791CD0062816206200294D7B /* PythonKit */; };
 		7941FA532814831C0006FA75 /* SocialDistancingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941FA522814831C0006FA75 /* SocialDistancingViewController.swift */; };
 		7E924642BA518AE02002E655 /* Pods_PandemicDefense_PandemicDefenseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA7E30600FE11CAB8F8DB21 /* Pods_PandemicDefense_PandemicDefenseUITests.framework */; };
 		858CF4C99447397B53C07603 /* Pods_PandemicDefenseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E8CAD91F9F648B112D7EB4 /* Pods_PandemicDefenseTests.framework */; };
@@ -75,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8F7E64C1834D0D7BDFFEB9 /* Pods_PandemicDefense.framework in Frameworks */,
+				791CD0072816206200294D7B /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +195,9 @@
 			dependencies = (
 			);
 			name = PandemicDefense;
+			packageProductDependencies = (
+				791CD0062816206200294D7B /* PythonKit */,
+			);
 			productName = PandemicDefense;
 			productReference = F412E01A2813CDED007C9110 /* PandemicDefense.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +272,9 @@
 				Base,
 			);
 			mainGroup = F412E0112813CDED007C9110;
+			packageReferences = (
+				791CD0052816206200294D7B /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = F412E01B2813CDED007C9110 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -728,6 +736,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		791CD0052816206200294D7B /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		791CD0062816206200294D7B /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 791CD0052816206200294D7B /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F412E0122813CDED007C9110 /* Project object */;
 }
